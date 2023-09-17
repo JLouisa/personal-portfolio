@@ -17,6 +17,8 @@
 }
 
 body {
+  padding-left: 1em;
+  padding-right: 1em;
   background-color: var(--backgroundColorDark);
   color: var(--textColor);
 }
@@ -95,7 +97,81 @@ nav ul li a:hover::after {
 
 .heroText {
   font-size: 5rem;
-  padding: 1em 2em;
+  padding: 2em 2em;
+  font-weight: 700;
 }
 
 /* --------------------Main--------------------- */
+/* ------------------About Me------------------- */
+
+.aboutMe {
+  padding: 2em;
+  display: grid;
+  grid-template: 1fr / 1fr 640px 640px 1fr;
+  gap: 3em;
+}
+
+.aboutMeText {
+  grid-area: 1/2/2/3;
+  font-size: 1.5rem;
+}
+
+.technologies {
+  grid-area: 1/3/2/4;
+}
+
+.techIcons {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 2em;
+  padding: 1em 0;
+  justify-items: stretch;
+}
+
+h3 {
+  grid-area: 1/1/2/5;
+}
+
+h2,
+h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.techIcons div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 0.3em;
+}
+
+.technologies img {
+  width: 6rem;
+  height: auto;
+}
+
+/* --------------------Projects--------------------- */
+h4 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.projects div img {
+  width: 20rem;
+  height: auto;
+}
+
+.projects div a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+/* --------------------Contact Me--------------------- */
+
+.contactMe div img {
+  width: 3rem;
+  height: auto;
+}

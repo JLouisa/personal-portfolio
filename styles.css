@@ -6,7 +6,8 @@
   font-family: "Poppins", sans-serif;
   --HeroColor: rgb(33, 111, 255);
   --backgroundColorLight: rgb(249, 250, 254);
-  --backgroundColorDark: #080808;
+  --backgroundColorDark2: #080808;
+  --backgroundColorDark: #262626;
   --borderLine: 1px solid #777;
   --textColor: white;
 }
@@ -21,6 +22,10 @@ body {
   padding-right: 1em;
   background-color: var(--backgroundColorDark);
   color: var(--textColor);
+}
+
+section {
+  margin: 2em 0em;
 }
 
 /* -----------------Header----------------- */
@@ -153,25 +158,64 @@ h3 {
 }
 
 /* --------------------Projects--------------------- */
-h4 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-.projects div img {
-  width: 20rem;
-  height: auto;
+.projects {
+  display: grid;
+  grid-template: 1fr / 1fr minmax(360px, 1280px) 1fr;
 }
 
 .projects div a {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  color: var(--textColor);
+  justify-content: center;
+  align-items: center;
+}
+
+.myProjects {
+  grid-area: 2/2/3/3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1280px));
+  gap: 1em;
+  padding: 1em;
+}
+
+h4 {
+  font-size: 3rem;
+  text-align: center;
+  grid-column: span 3;
+}
+
+.projects div img {
+  width: 25rem;
+  height: auto;
+}
+
+.projectDivs {
+  border-radius: 10px;
+  background-color: var(--backgroundColorDark2);
+  padding: 1em;
 }
 
 /* --------------------Contact Me--------------------- */
 
+h5 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.contactMe {
+  display: grid;
+  grid-template: 1fr / 1fr minmax(360px, 1280px) 1fr;
+}
+
+.myContactMe {
+  grid-area: 2/2/3/3;
+}
+
 .contactMe div img {
   width: 3rem;
   height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }

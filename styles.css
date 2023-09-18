@@ -49,7 +49,7 @@ header {
   justify-content: space-around;
   padding: 1em;
   color: var(--textColor);
-  position: sticky;
+  /* position: sticky; */
 }
 
 h1 {
@@ -124,6 +124,15 @@ section.hero {
 .heroTextP1 {
   font-size: 3rem;
   font-weight: 400;
+}
+
+/* --------------------Mobile--------------------- */
+.mobileheroText {
+  display: none;
+}
+
+.mobileHeroText2 {
+  display: none;
 }
 
 /* --------------------Main--------------------- */
@@ -340,7 +349,7 @@ footer div img {
 
 @media (max-width: 1400px) {
   .aboutMe {
-    padding: 2em;
+    padding: 1em;
     display: block;
   }
 }
@@ -352,7 +361,6 @@ footer div img {
   .projectList {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 2em;
     padding: 1em;
@@ -382,5 +390,105 @@ footer div img {
 
   header {
     justify-content: center;
+  }
+
+  .hero {
+    background-position-y: 10rem;
+  }
+
+  .heroTextP1 {
+    display: none;
+  }
+
+  .mobileheroText {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .heroText p {
+    font-size: 2rem;
+  }
+
+  .techIcons {
+    grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+    gap: 1em;
+  }
+
+  .projectList {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 1em;
+  }
+  .links {
+    gap: 0;
+  }
+  .copyright {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroText {
+    padding: 12em 2em 0em 2em;
+    font-size: 1.5rem;
+  }
+  .contactMeText p {
+    font-size: 1rem;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .techIcons {
+    grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+  }
+
+  .mobileheroText {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .mobileHeroText2 {
+    display: block;
+  }
+
+  .heroText {
+    display: none;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+  }
+
+  .aboutMeText {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .heroText {
+    font-size: 1.5rem;
+    padding: 0;
+    font-weight: 700;
+  }
+
+  .heroTextP1 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .mobileheroText {
+    font-size: 1rem;
   }
 }

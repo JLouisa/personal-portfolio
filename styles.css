@@ -115,15 +115,15 @@ section.hero {
   background-position-y: 12.5rem;
 }
 
-.heroTextP1 {
-  font-size: 3rem;
-  font-weight: 400;
-}
-
 .heroText {
   font-size: 5rem;
   padding: 2em 2em;
   font-weight: 700;
+}
+
+.heroTextP1 {
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 /* --------------------Main--------------------- */
@@ -257,6 +257,15 @@ h4 {
   height: 100%;
 }
 
+.layer a img {
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.layer a img:hover {
+  border: 2px solid white;
+}
+
 /* --------------------Contact Me--------------------- */
 
 h5 {
@@ -280,6 +289,7 @@ h5 {
 .contactMeText p {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1em;
 }
 
@@ -310,4 +320,67 @@ footer div img {
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+}
+
+/* --------------------Responsiveness--------------------- */
+
+@media (max-width: 1700px) {
+  .heroText {
+    font-size: 5rem;
+    padding: 4em 2em 2em 2em;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1500px) {
+  .heroTextP1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .aboutMe {
+    padding: 2em;
+    display: block;
+  }
+}
+
+@media (max-width: 1100px) {
+  .projects {
+    display: block;
+  }
+  .projectList {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+  }
+  .projectImages img {
+    max-width: 500px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    gap: 1em;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  nav ul {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
 }

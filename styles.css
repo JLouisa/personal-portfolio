@@ -107,7 +107,6 @@ section.hero {
 .hero {
   width: 100%;
   height: 100vh;
-  /* margin-top: -10em; */
   background-image: url(./images/representation/JAL.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -206,11 +205,9 @@ h4 {
 }
 
 .projectImages img {
-  /* border: 0.5em solid var(--HeroColor); */
   width: calc(100% - 1em);
   border-radius: 10px;
   transition: transform 0.5s;
-  /* display: block; */
 }
 
 .layer {
@@ -237,7 +234,6 @@ h4 {
 .myProjectsTitle {
   font-weight: 700;
   font-size: 1.7rem;
-  /* margin-bottom: 0.2em; */
 }
 
 .myProjectsText {
@@ -277,13 +273,41 @@ h5 {
   grid-area: 2/2/3/3;
 }
 
-.contactMe div img {
+.contactMeText {
+  font-size: 1.5rem;
+}
+
+.contactMeText p {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.contactMeText p img {
+  width: 3rem;
+  height: auto;
+}
+
+/* --------------------Footer--------------------- */
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+footer {
+  text-align: center;
+  padding: 2em;
+}
+
+.copyright {
+  font-size: 2rem;
+}
+
+footer div img {
   width: 3rem;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
-}
-
-.contactMeText {
-  font-size: 1.5rem;
 }

@@ -49,7 +49,6 @@ header {
   justify-content: space-around;
   padding: 1em;
   color: var(--textColor);
-  /* position: sticky; */
 }
 
 h1 {

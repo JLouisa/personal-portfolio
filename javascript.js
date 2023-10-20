@@ -1,1 +1,1 @@
-console.log("No javascripted used ;)");
+console.log("No javascripted used ;) for now");
